@@ -1,7 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -35,32 +34,23 @@ export const gridItems = [
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
+    techStack: ["/re.svg", "/next.svg", "/ts.svg", "/tail.svg", "three.svg", "gsap.svg"],
   },
   {
     id: 4,
     title: "Tech enthusiast with a passion for development.",
     description: "",
-    className: "lg:col-span-2 lg:row-span-1 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-3 lg:row-span-1 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
+    img: "",
     spareImg: "/b4.svg",
   },
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "lg:col-span-4 lg:row-span-1 md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
     title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 lg:row-span-1 md:col-span-3 md:row-span-1",
+    description: "tariebisamuel16@gmail.com",
+    className: "lg:col-span-3 lg:row-span-1 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
@@ -68,37 +58,95 @@ export const gridItems = [
   },
 ];
 
-export const projects = [
+export const socialLinks = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    name: "GitHub",
+    url: "https://github.com/itsTari",
+    icon: "/git.svg",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/glory-samuel-537759318",
+    icon: "/link.svg",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    name: "Twitter",
+    url: "#",
+    icon: "/twit.svg",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    name: "Instagram",
+    url: "#",
+    icon: "/insta.svg",
+  },
+  {
+    id: 5,
+    name: "WhatsApp",
+    url: "#",
+    icon: "/wha.svg",
+  },
+];
+
+export const email = "tariebisamuel16@gmail.com";
+
+export const myProjects = [
+  {
+    id: 1,
+    title: "Eazzyreg - Car Registration Platform",
+    des: "A seamless car registration platform that simplifies the vehicle registration process for users and administrators alike.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
+    link: "http://my.eazzyreg.com",
+  },
+  {
+    id: 2,
+    title: "MyLaundryOps - Laundry Tech Solution",
+    des: "A modern laundry management platform that streamlines service booking, user dashboards, and laundry operations in one place.",
+    img: "/p2.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
+    link: "https://www.mylaundryops.online/auth",
+  },
+  {
+    id: 3,
+    title: "B.B.H Care's - Healthcare Platform",
+    des: "A full healthcare platform that connects patients with medical services from the comfort of their home, built with Next.js.",
+    img: "/p3.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
+    link: "https://buburuebi-health-care.vercel.app/",
+  },
+];
+
+export const workExperience = [
+  {
+    id: 1,
+    title: "Frontend Developer Intern - Bayelsa Tech Hub",
+    desc: "Developed and maintained user-facing features using React and TypeScript, translating UI/UX designs into responsive, accessible web pages.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 2,
+    title: "Freelance Frontend Developer",
+    desc: "Built and deployed web applications for clients using Next.js, React, and TypeScript, managing full project lifecycle from requirements to post-launch maintenance.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Frontend Developer (Collaboration) - Eazzyreg",
+    desc: "Rebuilt and optimized the user profile page, restructured validation with Zod, and coordinated API integration with the backend team.",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 4,
+    title: "Frontend Developer (Collaboration) - MyLaundryOps",
+    desc: "Independently designed and developed the complete frontend interface, building 10+ functional screens with full mobile responsiveness.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
   },
 ];
